@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.548 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Login with valid email and password", "Optional[Login Test]"](1)  Time elapsed: 1.027 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver.
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Hassans-MBP', ip: 'fe80:0:0:0:94:8e22:946a:afec%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}], desiredCapabilities=Capabilities {browserName: safari}}]
+Capabilities {}
+

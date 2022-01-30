@@ -1,5 +1,6 @@
 Feature: Login Test
 
+  @login
   Scenario: Login with valid email and password
     Given I am at TalentTEK homepage
     And I enter valid email address
