@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@login"],
+        labels: ["@hb","@login"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [0.00]
+                data: [100.00, 100.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [100.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00]
+                data: [0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>cucumberBDD2022</td>
                           <td>1</td>
-                        <td>30 Jan 2022, 13:10</td>
+                        <td>06 Feb 2022, 12:12</td>
           </tr>
         </tbody>
       </table>
@@ -192,50 +192,65 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="login.html">@login</a></td>
+        <td class="tagname"><a href="hb.html">@hb</a></td>
         
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
+        <td      class="passed"    >5</td>
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="75000">000ms</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="299677000">299ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="login.html">@login</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="299677000">299ms</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>2</td>
+            <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>10</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
-      <td class="duration">000ms</td>
+      <td>10</td>
+      <td class="duration">599ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>0.00%</td>
       <td>100.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

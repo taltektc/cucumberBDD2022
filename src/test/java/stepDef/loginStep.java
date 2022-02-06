@@ -13,22 +13,22 @@ public class loginStep extends setup {
 
     @Given("I am at TalentTEK homepage")
     public void iAmAtTalentTEKHomepage() {
-        // code
+        lp.verifyHomepageTitle();
     }
 
     @And("I enter valid email address")
     public void iEnterValidEmailAddress() {
-        lp.enterEmailAddress("qatest1@gmail.com");
+        lp.enterEmailAddress(Hook.existingStudentEmail);
     }
 
     @And("I enter valid password")
     public void iEnterValidPassword() {
-        
+        lp.enterEmailPassword(Hook.existingStudentPass);
     }
 
     @When("I click on Login button")
     public void iClickOnLoginButton() {
-        
+        lp.clickLoginButton();
     }
 
     @Then("I should be able to successfully login")
