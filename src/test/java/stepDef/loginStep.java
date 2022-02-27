@@ -3,13 +3,14 @@ package stepDef;
 import base.setup;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObject.loginPage;
+import pageObject.profilePage;
 
 public class loginStep extends setup {
 
     loginPage lp = new loginPage(driver);
+    profilePage pp = new profilePage(driver);
 
     @Given("I am at TalentTEK homepage")
     public void iAmAtTalentTEKHomepage() {
@@ -31,7 +32,12 @@ public class loginStep extends setup {
         lp.clickLoginButton();
     }
 
-    @Then("I should be able to successfully login")
-    public void iShouldBeAbleToSuccessfullyLogin() {
+    @And("I logged into my student account")
+    public void iLoggedInIntoTalentTEKAccount() {
+        lp.enterEmailAddress(Hook.existingStudentEmail);
+        lp.enterEmailPassword(Hook.existingStudentPass);
+        lp.clickLoginButton();
+        pp.verifyWelcomeTextInProfilePage();
     }
+
 }

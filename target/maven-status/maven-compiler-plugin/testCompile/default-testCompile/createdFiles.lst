@@ -1,3 +1,5 @@
+pageObject/profilePage.class
+stepDef/profileStep.class
 stepDef/loginStep.class
 stepDef/Hook.class
 base/setup.class

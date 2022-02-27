@@ -4,6 +4,9 @@ package stepDef;
 import base.setup;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.util.Strings;
 
 public class Hook extends setup {
@@ -43,7 +46,16 @@ public class Hook extends setup {
     }
 
     @After
-    public void endTest(){
-        //driver.close();
+    public void endTest(Scenario scenario){
+        try {
+            if (scenario.isFailed()){
+                final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                // embed it in the report.
+                scenario.attach(screenshot, "image/png", scenario.getName());
+            }
+        } finally {
+            driver.quit();
+        }
     }
+
 }

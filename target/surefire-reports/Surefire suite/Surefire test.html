@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 06 12:12:19 EST 2022</td>
+<td>Started on:</td><td>Sun Feb 27 10:50:23 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4437 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6608 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email and password", "Optional[Login Test]"</td>
-<td></td>
-<td>4</td>
+<td><div><pre>java.lang.AssertionError: expected [Welcome to TalentTech] but found [Welcome to TalentTek]
+	at pageObject.profilePage.verifyWelcomeTextInProfilePage(profilePage.java:24)
+	at stepDef.profileStep.iShouldBeAbleToSuccessfullyLogin(profileStep.java:17)
+	at ✽.I should be able to successfully login(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/login.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594582497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594582497'><pre>java.lang.AssertionError: expected [Welcome to TalentTech] but found [Welcome to TalentTek]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.profilePage.verifyWelcomeTextInProfilePage(profilePage.java:24)
+	at stepDef.profileStep.iShouldBeAbleToSuccessfullyLogin(profileStep.java:17)
+	at ✽.I should be able to successfully login(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/login.feature:9)
+</pre></div></td>
+<td>6</td>
 <td>TestRunner@2b4a2ec7</td></tr>
 </table><p>
 </body>

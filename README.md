@@ -10,6 +10,6 @@ CMD+A
 CTL+I
 
 # How to execute test in CMD
-mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@login"
+mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@hb"
 
 
