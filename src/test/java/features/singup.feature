@@ -1,7 +1,7 @@
 Feature: Signup Test
 
   @signup
-  Scenario: Signup with valid email address
+  Scenario: Sign in after creating a brand new test account
     Given I am at TalentTEK homepage
     And I create a brand new student account
     And I click on Login link
