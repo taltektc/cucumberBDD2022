@@ -20,7 +20,7 @@ public class profilePage extends setup {
 
     public void verifyWelcomeTextInProfilePage(){
         String act = welcomeText.getText();
-        String exp = "Welcome to TalentTech";
+        String exp = "Welcome to TalentTek";
         Assert.assertEquals(act, exp);
     }
 

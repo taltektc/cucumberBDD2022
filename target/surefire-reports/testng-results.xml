@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-27T10:50:23 EST" name="Surefire suite" finished-at="2022-02-27T10:50:30 EST" duration-ms="6608">
+  <suite name="Surefire suite" duration-ms="10062" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:50 EST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@2b4a2ec7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-27T10:50:23 EST" name="Surefire test" finished-at="2022-02-27T10:50:30 EST" duration-ms="6608">
+    <test name="Surefire test" duration-ms="10062" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:50 EST">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@2b4a2ec7]" started-at="2022-02-27T10:50:23 EST" name="setUpClass" finished-at="2022-02-27T10:50:23 EST" duration-ms="290" status="PASS">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@1877ab81]" name="setUpClass" is-config="true" duration-ms="252" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:41 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@2b4a2ec7]" started-at="2022-02-27T10:50:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-27T10:50:30 EST" duration-ms="6198" status="FAIL">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="5756" started-at="2022-03-03T18:54:41 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-03T18:54:46 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid email and password"]]>
+                <![CDATA["Login with different sets of data"]]>
               </value>
             </param>
             <param index="1">
@@ -27,28 +27,26 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Welcome to TalentTech] but found [Welcome to TalentTek]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Welcome to TalentTech] but found [Welcome to TalentTek]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at pageObject.profilePage.verifyWelcomeTextInProfilePage(profilePage.java:24)
-at stepDef.profileStep.iShouldBeAbleToSuccessfullyLogin(profileStep.java:17)
-at ✽.I should be able to successfully login(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/login.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@2b4a2ec7]" started-at="2022-02-27T10:50:30 EST" name="tearDownClass" finished-at="2022-02-27T10:50:30 EST" duration-ms="90" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="3973" started-at="2022-03-03T18:54:46 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-03T18:54:50 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different sets of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@1877ab81]" name="tearDownClass" is-config="true" duration-ms="58" started-at="2022-03-03T18:54:50 EST" finished-at="2022-03-03T18:54:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

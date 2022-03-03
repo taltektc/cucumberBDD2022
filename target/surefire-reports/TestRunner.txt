@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.903 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["Login with valid email and password", "Optional[Login Test]"](1)  Time elapsed: 6.218 s  <<< FAILURE!
-java.lang.AssertionError: expected [Welcome to TalentTech] but found [Welcome to TalentTek]
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.684 s - in TestRunner

@@ -40,4 +40,23 @@ public class loginStep extends setup {
         pp.verifyWelcomeTextInProfilePage();
     }
 
+    @And("I enter valid {string} address")
+    public void enterDifferentSetsOfEmailAddress(String email) {
+        lp.enterDifferentSetsOfEmail(email);
+    }
+
+    @And("I enter valid {string}")
+    public void iEnterDifferentSetsOfValidPassword(String password) {
+        lp.enterDifferentSetsOfPassword(password);
+    }
+
+    @And("I enter student valid {string} address")
+    public void iEnterStudentValidEmailAddress(String email) {
+        lp.emailLocator.sendKeys(email);
+    }
+
+    @And("I enter student valid {string}")
+    public void iEnterStudentValidPassword(String pass) {
+        lp.passwordLocator.sendKeys(pass);
+    }
 }

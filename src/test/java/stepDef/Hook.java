@@ -12,6 +12,7 @@ import org.testng.util.Strings;
 public class Hook extends setup {
     public static String url;
     public static String existingStudentEmail;
+    public static String existingStudentEmail2;
     public static String existingStudentPass;
     public static String driverType = System.getProperty("browser");
     public static String envData = System.getProperty("env");
@@ -29,6 +30,7 @@ public class Hook extends setup {
             case "qa":
                 url = "http://qa.taltektc.com";
                 existingStudentEmail = "qaenv@gmail.com";
+                existingStudentEmail2 = "qaenv2@gmail.com";
                 existingStudentPass = "Te$t1234";
                 break;
             case "stage":
