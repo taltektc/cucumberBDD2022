@@ -22,8 +22,7 @@ Feature: Login Test
     |fakeEmail2|pass2|
 
 
-  @hb
-  Scenario Outline: Login with different sets of hard-coded data
+ Scenario Outline: Login with different sets of hard-coded data
     And I enter student valid "<email>" address
     And I enter student valid "<password>"
     When I click on Login button

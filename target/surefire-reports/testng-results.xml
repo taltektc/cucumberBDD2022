@@ -1,52 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="10062" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:50 EST">
+  <suite name="Surefire suite" duration-ms="44683" started-at="2022-03-06T10:58:48 EST" finished-at="2022-03-06T10:59:33 EST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="10062" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:50 EST">
+    <test name="Surefire test" duration-ms="44683" started-at="2022-03-06T10:58:48 EST" finished-at="2022-03-06T10:59:33 EST">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@1877ab81]" name="setUpClass" is-config="true" duration-ms="252" started-at="2022-03-03T18:54:40 EST" finished-at="2022-03-03T18:54:41 EST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@1877ab81]" name="setUpClass" is-config="true" duration-ms="249" started-at="2022-03-06T10:58:48 EST" finished-at="2022-03-06T10:58:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="5756" started-at="2022-03-03T18:54:41 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-03T18:54:46 EST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="35085" started-at="2022-03-06T10:58:49 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-06T10:59:24 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with different sets of data"]]>
+                <![CDATA["Sign in after creating a brand new test account"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Test]"]]>
+                <![CDATA["Optional[Signup]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/legend"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-VNOG7NT', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2dd598db219c5431a609b17d85293d29, findElement {using=xpath, value=//*[@id='profile_form']/legend}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HASSAN~1.BHU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50616/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dd598db219c5431a609b17d85293d29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/legend"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-VNOG7NT', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2dd598db219c5431a609b17d85293d29, findElement {using=xpath, value=//*[@id='profile_form']/legend}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HASSAN~1.BHU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50616/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dd598db219c5431a609b17d85293d29
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy24.getText(Unknown Source)
+at pageObject.profilePage.verifyWelcomeTextInProfilePage(profilePage.java:22)
+at stepDef.profileStep.iShouldBeAbleToSuccessfullyLogin(profileStep.java:17)
+at ✽.I should be able to successfully login(file:///C:/Users/hassan01.bhuiyan/Documents/Automation/cucumberBDD2022/src/test/java/features/singup.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="3650" started-at="2022-03-06T10:59:24 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-06T10:59:27 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Signup with different sets of test data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="3973" started-at="2022-03-03T18:54:46 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-03T18:54:50 EST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="2742" started-at="2022-03-06T10:59:27 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-06T10:59:30 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with different sets of data"]]>
+                <![CDATA["Signup with different sets of test data"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Test]"]]>
+                <![CDATA["Optional[Signup]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@1877ab81]" name="tearDownClass" is-config="true" duration-ms="58" started-at="2022-03-03T18:54:50 EST" finished-at="2022-03-03T18:54:50 EST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1877ab81]" name="runScenario" duration-ms="2859" started-at="2022-03-06T10:59:30 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-06T10:59:33 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Signup with different sets of test data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@1877ab81]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2022-03-06T10:59:33 EST" finished-at="2022-03-06T10:59:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

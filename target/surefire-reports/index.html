@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Sign in after creating a brand new test account&quot;, &quot;Optional[Signup]&quot;)">runScenario("Sign in after creating a brand new test account", "Optional[Signup]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Login with different sets of data&quot;, &quot;Optional[Login Test]&quot;)">runScenario("Login with different sets of data", "Optional[Login Test]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">runScenario("Signup with different sets of test data", "Optional[Signup]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Login with different sets of data&quot;, &quot;Optional[Login Test]&quot;)">runScenario("Login with different sets of data", "Optional[Login Test]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">runScenario("Signup with different sets of test data", "Optional[Signup]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="TestRunner" hash-for-method="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">runScenario("Signup with different sets of test data", "Optional[Signup]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -124,6 +143,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign in after creating a brand new test account&quot;, &quot;Optional[Signup]&quot;)">
+                  </a> <!-- runScenario("Sign in after creating a brand new test account", "Optional[Signup]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign in after creating a brand new test account", "Optional[Signup]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;profile_form&apos;]/legend&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-VNOG7NT&apos;, ip: &apos;192.168.1.153&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2dd598db219c5431a609b17d85293d29, findElement {using=xpath, value=//*[@id=&apos;profile_form&apos;]/legend}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HASSAN~1.BHU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50616/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2dd598db219c5431a609b17d85293d29
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at pageObject.profilePage.verifyWelcomeTextInProfilePage(profilePage.java:22)
+	at stepDef.profileStep.iShouldBeAbleToSuccessfullyLogin(profileStep.java:17)
+	at ✽.I should be able to successfully login(file:///C:/Users/hassan01.bhuiyan/Documents/Automation/cucumberBDD2022/src/test/java/features/singup.feature:11)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,20 +197,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with different sets of data&quot;, &quot;Optional[Login Test]&quot;)">
-                  </a> <!-- runScenario("Login with different sets of data", "Optional[Login Test]") -->
+                  <a name="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">
+                  </a> <!-- runScenario("Signup with different sets of test data", "Optional[Signup]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with different sets of data", "Optional[Login Test]")</span>
+                  <span class="parameters">("Signup with different sets of test data", "Optional[Signup]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with different sets of data&quot;, &quot;Optional[Login Test]&quot;)">
-                  </a> <!-- runScenario("Login with different sets of data", "Optional[Login Test]") -->
+                  <a name="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">
+                  </a> <!-- runScenario("Signup with different sets of test data", "Optional[Signup]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with different sets of data", "Optional[Login Test]")</span>
+                  <span class="parameters">("Signup with different sets of test data", "Optional[Signup]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with different sets of test data&quot;, &quot;Optional[Signup]&quot;)">
+                  </a> <!-- runScenario("Signup with different sets of test data", "Optional[Signup]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with different sets of test data", "Optional[Signup]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -211,20 +286,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner')
-data.setCell(0, 3, 5756);
+data.setCell(0, 3, 35085);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'TestRunner')
-data.setCell(1, 3, 3973);
+data.setCell(1, 3, 3650);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'TestRunner')
+data.setCell(2, 3, 2859);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'TestRunner')
+data.setCell(3, 3, 2742);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -256,16 +339,26 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with different sets of data", "Optional[Login Test]")</span>
-                <span class="method-start">262 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Sign in after creating a brand new test account", "Optional[Signup]")</span>
+                <span class="method-start">259 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with different sets of data", "Optional[Login Test]")</span>
-                <span class="method-start">6019 ms</span>
+                <span class="method-name">runScenario("Signup with different sets of test data", "Optional[Signup]")</span>
+                <span class="method-start">35348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with different sets of test data", "Optional[Signup]")</span>
+                <span class="method-start">38998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with different sets of test data", "Optional[Signup]")</span>
+                <span class="method-start">41740 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">9993 ms</span>
+                <span class="method-start">44600 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

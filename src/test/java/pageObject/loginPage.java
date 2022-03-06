@@ -26,6 +26,9 @@ public class loginPage extends setup {
     public WebElement passwordLocator;
     @FindBy(how= How.XPATH, using = "//input[@value='Log In']")
     public WebElement loginButtonLoc;
+    @FindBy(how= How.XPATH, using = "//*[@id='wrap']/div/div/div/a")
+    public WebElement createNewAccountBtn;
+
 
     public void verifyHomepageTitle(){
         String act = driver.getTitle(); // comes development
@@ -61,6 +64,9 @@ public class loginPage extends setup {
         loginButtonLoc.click();
     }
 
+    public void clickCreateNewAccountButton(){
+        createNewAccountBtn.click();
+    }
 
 
 }
