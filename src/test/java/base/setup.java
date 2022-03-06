@@ -3,6 +3,7 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
@@ -14,8 +15,11 @@ public class setup {
     // browser setup
     public static WebDriver setupBrowser(String driverType) {
         if (driverType.equalsIgnoreCase("ch")) {
+            ChromeOptions options = new ChromeOptions();
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            //options.setHeadless(true);
+            options.addArguments("--incognito");
+            driver = new ChromeDriver(options);
         } else if (driverType.equalsIgnoreCase("ff")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();

@@ -1,16 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.36 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["Sign in after creating a brand new test account", "Optional[Signup]"](1)  Time elapsed: 35.145 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/legend"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-VNOG7NT', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2dd598db219c5431a609b17d85293d29, findElement {using=xpath, value=//*[@id='profile_form']/legend}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HASSAN~1.BHU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50616/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dd598db219c5431a609b17d85293d29
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.019 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Sign in after creating a brand new test account", "Optional[Signup]"](1)  Time elapsed: 4.924 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'I create a brand new student account' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I create a brand new student account")
+public void i_create_a_brand_new_student_account() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I click on Login link")
+public void i_click_on_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I login with brand new student credentials")
+public void i_login_with_brand_new_student_credentials() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
 
