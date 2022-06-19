@@ -1,9 +1,5 @@
-stepDef\loginStep.class
-stepDef\profileStep.class
-stepDef\signupStep.class
-pageObject\profilePage.class
-stepDef\Hook.class
-base\setup.class
-pageObject\signupPage.class
-pageObject\loginPage.class
+stepDef/hcStep.class
+stepDef/Hook.class
+base/setup.class
 TestRunner.class
+pageObject/hcPage.class

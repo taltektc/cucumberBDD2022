@@ -17,8 +17,6 @@ public class setup {
         if (driverType.equalsIgnoreCase("ch")) {
             ChromeOptions options = new ChromeOptions();
             WebDriverManager.chromedriver().setup();
-            //options.setHeadless(true);
-            options.addArguments("--incognito");
             driver = new ChromeDriver(options);
         } else if (driverType.equalsIgnoreCase("ff")) {
             WebDriverManager.firefoxdriver().setup();

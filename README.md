@@ -1,4 +1,4 @@
-# cucumberBDD2022
+# HealthCourse
 UI Framework using Java, Selenium WD with maven and cucumber
 
 # Fix code in Mac
@@ -10,6 +10,7 @@ CMD+A
 CTL+I
 
 # How to execute test in CMD
-mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@hb"
+Ensure java and maven is installed/configured
+mvn verify -Denv=prod -Dbrowser=ch -Dcucumber.filter.tags="@test"
 
 

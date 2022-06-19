@@ -1,8 +1,5 @@
-/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/stepDef/profileStep.java
-/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/stepDef/loginStep.java
+/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/stepDef/hcStep.java
 /Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/stepDef/Hook.java
-/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/pageObject/loginPage.java
 /Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/base/setup.java
-/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/stepDef/test.java
-/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/pageObject/profilePage.java
+/Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/pageObject/hcPage.java
 /Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/TestRunner.java

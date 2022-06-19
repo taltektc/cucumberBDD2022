@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>cucumberBDD2022</td>
                           <td>1</td>
-                        <td>06 Mar 2022, 11:23</td>
+                        <td>19 Jun 2022, 13:59</td>
           </tr>
         </tbody>
       </table>
@@ -126,14 +126,14 @@ $(document).ready(function() {
                     <td  class="passed"    >4</td>
           <td >0</td>
           <td class="total">4</td>
-          <td      class="passed"    >13</td>
           <td >0</td>
-          <td     class="skipped"   >3</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >13</td>
           <td >0</td>
-          <td   class="undefined" >1</td>
+          <td >0</td>
           <td class="total">17</td>
-          <td class="duration" data-value="1954000000">1s 954ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="45996000">045ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -153,7 +153,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Signup</span>
   
@@ -171,9 +171,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">Signup test</span>
   
@@ -184,15 +184,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -202,18 +202,39 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at TalentTEK homepage</span>
   
-  <span class="lead-duration duration">027ms</span>
+  <span class="lead-duration duration">025ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [Account Suspended] but found [Sign In]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.loginPage.verifyHomepageTitle(loginPage.java:36)
+	at stepDef.loginStep.iAmAtTalentTEKHomepage(loginStep.java:17)
+	at ✽.I am at TalentTEK homepage(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/singup.feature:4)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -243,7 +264,7 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -256,10 +277,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -271,13 +292,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-4" class="inner-level collapse collapsable-details ">
+    <div id="before-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">4s 073ms</span>
+  <span class="lead-duration duration">8s 729ms</span>
 
           </div>
 
@@ -293,7 +314,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -305,10 +326,10 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I create a brand new student account</span>
   
@@ -396,7 +417,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -408,13 +429,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">651ms</span>
+  <span class="lead-duration duration">441ms</span>
 
           </div>
 
@@ -422,6 +443,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_1533435629" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1533435629.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_1533435629" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_1533435629.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>
@@ -438,9 +470,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">Signup test</span>
   
@@ -451,15 +483,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -469,18 +501,39 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at TalentTEK homepage</span>
   
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">006ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Error message</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [Account Suspended] but found [Sign In]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.loginPage.verifyHomepageTitle(loginPage.java:36)
+	at stepDef.loginStep.iAmAtTalentTEKHomepage(loginStep.java:17)
+	at ✽.I am at TalentTEK homepage(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/singup.feature:4)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -510,7 +563,7 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -523,10 +576,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -538,13 +591,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-10" class="inner-level collapse collapsable-details ">
+    <div id="before-12" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">6s 268ms</span>
+  <span class="lead-duration duration">1s 829ms</span>
 
           </div>
 
@@ -560,9 +613,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -572,14 +625,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter my "Akash" and "Khan"</span>
   
-  <span class="lead-duration duration">357ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -596,11 +649,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter my "akash.khan@gmail.com"</span>
   
-  <span class="lead-duration duration">052ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -617,11 +670,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter "Test$1234" and confirm my "Test$1234"</span>
   
-  <span class="lead-duration duration">085ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -642,7 +695,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -654,13 +707,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-14" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">660ms</span>
+  <span class="lead-duration duration">377ms</span>
 
           </div>
 
@@ -668,6 +721,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-51196586" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-51196586.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-51196586" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-51196586.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>
@@ -684,9 +748,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name">Signup test</span>
   
@@ -697,15 +761,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details ">
+  <div id="element-15" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -715,18 +779,39 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at TalentTEK homepage</span>
   
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">007ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Error message</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [Account Suspended] but found [Sign In]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.loginPage.verifyHomepageTitle(loginPage.java:36)
+	at stepDef.loginStep.iAmAtTalentTEKHomepage(loginStep.java:17)
+	at ✽.I am at TalentTEK homepage(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/singup.feature:4)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -756,7 +841,7 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -769,10 +854,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-18" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-19">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -784,13 +869,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-16" class="inner-level collapse collapsable-details ">
+    <div id="before-19" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">10s 020ms</span>
+  <span class="lead-duration duration">1s 709ms</span>
 
           </div>
 
@@ -802,156 +887,13 @@ $(document).ready(function() {
         </div>
           </div>
   </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter my "Sky" and "Khan"</span>
-  
-  <span class="lead-duration duration">827ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter my "akash.khan1@gmail.com"</span>
-  
-  <span class="lead-duration duration">047ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter "Test$1234" and confirm my "Test$1234"</span>
-  
-  <span class="lead-duration duration">079ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-18" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">658ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name">Signup test</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-19" class="collapse collapsable-details ">
-    
 
 
     
 <div class="steps inner-level">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -964,15 +906,190 @@ $(document).ready(function() {
   <div id="steps-20" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am at TalentTEK homepage</span>
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter my "Sky" and "Khan"</span>
   
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
         
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter my "akash.khan1@gmail.com"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter "Test$1234" and confirm my "Test$1234"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-21" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">397ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-51196586" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-51196586.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-51196586" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-51196586.png"></span>
+    </div>
+  </div>
+        </div>
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name">Signup test</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I am at TalentTEK homepage</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Error message</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [Account Suspended] but found [Sign In]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.loginPage.verifyHomepageTitle(loginPage.java:36)
+	at stepDef.loginStep.iAmAtTalentTEKHomepage(loginStep.java:17)
+	at ✽.I am at TalentTEK homepage(file:///Users/hbhuiyan/Documents/TalentTEK/git/cucumberBDD2022/src/test/java/features/singup.feature:4)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -1002,7 +1119,7 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1015,10 +1132,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-25" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1030,13 +1147,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-22" class="inner-level collapse collapsable-details ">
+    <div id="before-26" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">2s 008ms</span>
+  <span class="lead-duration duration">1s 699ms</span>
 
           </div>
 
@@ -1052,9 +1169,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1064,14 +1181,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter my "blueSky" and "Khan"</span>
   
-  <span class="lead-duration duration">322ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1088,11 +1205,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter my "akash.khan2@gmail.com"</span>
   
-  <span class="lead-duration duration">056ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1109,11 +1226,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">I enter "Test$1234" and confirm my "Test$1234"</span>
   
-  <span class="lead-duration duration">087ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1134,7 +1251,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1146,13 +1263,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.endTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">633ms</span>
+  <span class="lead-duration duration">391ms</span>
 
           </div>
 
@@ -1160,6 +1277,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-51196586" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-51196586.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-51196586" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-51196586.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>

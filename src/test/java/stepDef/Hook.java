@@ -23,25 +23,18 @@ public class Hook extends setup {
             driverType = "ch";
         }
         if (Strings.isNullOrEmpty(envData)){
-            envData = "qa";
+            envData = "prod";
         }
         driver = setupBrowser(driverType);
         switch (envData){
             case "qa":
-                url = "http://qa.taltektc.com";
-                existingStudentEmail = "qaenv@gmail.com";
-                existingStudentEmail2 = "qaenv2@gmail.com";
-                existingStudentPass = "Te$t1234";
+                url = "https://qa.healthcourse.com/contact/";
                 break;
             case "stage":
-                url = "http://stage.taltektc.com";
-                existingStudentEmail = "stgenv@gmail.com";
-                existingStudentPass = "$tudenT1234";
+                url = "https://stage.healthcourse.com/contact/";
                 break;
             case "prod":
-                url = "http://prod.taltektc.com";
-                existingStudentEmail = "";
-                existingStudentPass = "";
+                url = "https://www.healthcourse.com/contact/";
                 break;
         }
         driver.get(url);
@@ -56,7 +49,7 @@ public class Hook extends setup {
                 scenario.attach(screenshot, "image/png", scenario.getName());
             }
         } finally {
-            driver.quit();
+            //driver.quit();
         }
     }
 

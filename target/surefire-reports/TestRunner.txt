@@ -1,26 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.019 s <<< FAILURE! - in TestRunner
-TestRunner.runScenario["Sign in after creating a brand new test account", "Optional[Signup]"](1)  Time elapsed: 4.924 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'I create a brand new student account' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("I create a brand new student account")
-public void i_create_a_brand_new_student_account() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("I click on Login link")
-public void i_click_on_login_link() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I login with brand new student credentials")
-public void i_login_with_brand_new_student_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.867 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Validate Contact page submit button is working with valid credentials", "Optional[Login Test]"](1)  Time elapsed: 4.385 s  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: 
+invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Hassans-MBP', ip: 'fe80:0:0:0:1471:325e:309a:d010%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba2db10454561ea11aeeb21d35f77db9, findElement {using=name, value=//input[@name='et_pb_contact_name_0']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/04/g7v8kdcn5g3...}, goog:chromeOptions: {debuggerAddress: localhost:55627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55627/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba2db10454561ea11aeeb21d35f77db9
 
